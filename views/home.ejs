@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+      <nav>
+        <ul>
+          <% if (user){ %>
+            <li><a href="/auth/logout">Log out</a></li>
+            <%} else {%>
+            <li><a href="/auth/login">Login</a></li>
+            <%}%>  
+          <li><a href="/">Homepage</a></li>
+          <li><a href="/profile">Profile</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h1>Auth test</h1>
+        <h2>Homepage</h2>
+      </header>
+      <main>
+        <p>fart fart fart</p>
+      </main>
+
+  </body>
+</html>
